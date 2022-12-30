@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: no-repeat center fixed;
+    background-size: cover;;
+    background-attachment: fixed;
+}
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(24, 75, 133, 0);
+        color:rgb(255, 255, 255);
+    }
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        font-family: helvetica;
+        font-weight: bolder;
+    }
+
+    .navbar-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        
+
+    }
+
+    .navbar-links li {
+        list-style: none;
+    }
+
+    .navbar-links li a{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        padding: 1rem;
+        display: block;
+        font-family: helvetica;
+        font-style: italic;
+        
+    }
+
+    .navbar-links li:hover{
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
